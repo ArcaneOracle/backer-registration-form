@@ -4,104 +4,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link href="output.css" rel="stylesheet">
+  <style>
+    /* Apply the Montserrat font to elements on your website */
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
+  </style>
   <title>Backer Registration Form</title>
 </head>
 
 <body class="p-4 px-4 tracking-wide bg-gray-300 xs:bg-green-300 sm:bg-pink-300 md:bg-purple-300 lg:bg-blue-300 xl:bg-red-300 2xl:bg-orange-300">
-  <form class="flex flex-wrap items-center justify-center h-screen m-auto w-11/12 sm:w-5/6 md:w-2/3 lg:1/3 px-6 py-4 rounded-xl space-y-2 drop-shadow-lg backdrop-blur-md hover:backdrop-blur-sm duration-1000 ease-in-out" method="post" enctype="multipart/form-data">
-<!-- FIRST NAME -->
-    <label class="w-full">
-      First Name
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
+  <form class="h-screen m-auto w-auto px-6 py-4 rounded-xl backdrop-blur-md hover:backdrop-blur-sm duration-1000 ease-in-out">
+    <div class="flex flex-wrap m-auto w-auto sm:w-5/6 md:w-2/3 lg:1/3 px-6 py-4 rounded-xl drop-shadow-lg backdrop-blur-md hover:backdrop-blur-sm duration-1000 ease-in-out space-y-8">
+      <h1 class="w-full text-2xl">
+        Register as a backer here.
+      </h1>
 
-<!-- LAST NAME -->
-    <label class="w-full">
-      Last Name
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
+  <!-- FIRST NAME -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1">
+        <label>
+          First Name
+        </label>
+        <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+      </div>
 
-<!-- PHONE -->
-    <label class="w-full">
-      First Name
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
+  <!-- LAST NAME -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1">
+        <label>
+          Last Name
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
 
-<!-- EMAIL -->
-    <label class="w-full">
-      E-Mail
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
+  <!-- PHONE -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1">
+        <label>
+          Cellphone Number
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
 
-<!-- ID NUMBER/PASSPORT -->
-    <div class="w-full">
-      <label for="enterID">
-        <input type="radio" name="id/passport" id="enterID">
-        ID
-      </label>
+  <!-- EMAIL -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1">
+        <label>
+          E-Mail
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
 
-      <label for="enterPassport">
-        <input type="radio" name="id/passport" id="enterPassport">
-        Passport
-      </label>
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+  <!-- ID NUMBER/PASSPORT -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1">
+        <div class="">
+          <label for="enterID">
+            <input type="radio" name="id/passport" id="enterID">
+            ID
+          </label>
+
+          <label for="enterPassport">
+            <input type="radio" name="id/passport" id="enterPassport">
+            Passport
+          </label>
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </div>
+      </div>
+
+  <!-- DATE OF BIRTH -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1">
+        <label>
+          Date of Birth
+          <input type="date" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
+
+  <!-- ADDRESS -->
+  <!-- STREET ADRESS -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1">
+        <label>
+          Street Adress
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
+
+  <!-- ADDRESS LINE 2 -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1">
+        <label>
+          Address Line 2
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
+
+  <!-- CITY -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1">
+        <label>
+          City
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
+
+  <!-- PROVINCE -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1">
+        <label>
+          Province
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
+
+  <!-- POSTAL CODE -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1">
+        <label>
+          Postal Code
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
+
+  <!-- COUNTRY -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1">
+        <label>
+          Country
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
+
+  <!-- CREATE PASSWORD -->
+      <div class="w-full md:w-2/5 mr-auto my-auto space-y-1">
+        <label>
+          Create Password
+          <input type="password" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
+
+  <!-- CONFIRM PASSWORD -->
+      <div class="w-full md:w-2/5 ml-auto my-auto space-y-1">
+        <label>
+          Confirm Password
+          <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
+        </label>
+      </div>
+
+      <!-- Empty DIV -->
+      <div class="w-full text-right m-auto">
+        <button type="submit" class="ml-auto bg-red-600 px-2 py-1 rounded-md ease-in-out duration-300 hover:scale-105 hover:brightness-110">Register</button>
+      </div>
     </div>
-
-<!-- DATE OF BIRTH -->
-    <label class="w-full">
-      Date of Birth
-      <input type="date" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
-
-<!-- ADDRESS -->
-<!-- STREET ADRESS -->
-    <label class="w-full">
-      Street Adress
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
-
-<!-- ADDRESS LINE 2 -->
-    <label class="w-full">
-      Address Line 2
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
-
-<!-- CITY -->
-    <label class="w-full">
-      City
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
-
-<!-- PROVINCE -->
-    <label class="w-full">
-      Province
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
-
-<!-- POSTAL CODE -->
-    <label class="w-full">
-      Postal Code
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
-
-<!-- COUNTRY -->
-    <label class="w-full">
-      Country
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
-
-<!-- CREATE PASSWORD -->
-    <label class="w-full">
-      Create Password
-      <input type="password" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
-
-<!-- CONFIRM PASSWORD -->
-    <label class="w-full">
-      Confirm Password
-      <input type="text" class="w-full border-black border-2 border-solid focus:outline-none px-2 py-1 rounded-md border-opacity-60 drop-shadow-md" required>
-    </label>
   </form>
 </body>
 
